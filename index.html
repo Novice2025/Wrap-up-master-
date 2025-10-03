@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wrap Up Lesson - Inglês para Brasileiros</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom Styling for Netflix Clone Feel */
+        :root {
+            --netflix-red: #E50914;
+            --accent-gold: #FFD700;
+            --dark-bg: #141414;
+            --mid-bg: #1F1F1F;
+            --formal-blue: #3b82f6;
+        }
+        body {
+            background-color: var(--dark-bg);
+            color: #FFFFFF;
+            font-family: 'Inter', sans-serif;
+            transition: background-color 0.3s;
+        }
+        .header-nav {
+            background-color: rgba(20, 20, 20, 0.95);
+        }
+        .hero-title {
+            font-family: 'Poppins', sans-serif;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        }
+        .lesson-card {
+            background-color: var(--mid-bg);
+            border: 1px solid #333;
+            transition: transform 0.2s, box-shadow 0.3s;
+            position: relative;
+            border-radius: 0.75rem;
+        }
+        .lesson-card:hover {
+            transform: scale(1.03);
+            box-shadow: 0 0 30px rgba(229, 9, 20, 0.6);
+        }
+        .highlight-text {
+            color: var(--netflix-red);
+            font-weight: 700;
+        }
+        .highlight-red {
+            color: var(--netflix-red);
+        }
+        .portuguese-box {
+            background-color: #2b2b2b;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            color: #ccc;
+            border-left: 4px solid var(--accent-gold);
+            margin-top: 1rem;
+        }
+        .teacher-tip {
+            border: 2px solid var(--netflix-red);
+            padding: 1rem;
+            border-radius: 0.75rem;
+            background-color: #240a0b;
+            margin-top: 1.5rem;
+        }
+        .wrap-up-core {
+            border: 3px solid var(--accent-gold);
+            box-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
+        }
+        .formal-card {
+            border: 2px solid var(--formal-blue);
+            box-shadow: 0 0 15px rgba(59, 130, 246, 0.4);
+        }
+        /* Quiz Specific Styles */
+        .quiz-option:hover {
+            background-color: #2b2b2b;
+        }
+        .quiz-option input[type="radio"]:checked + label {
+            background-color: var(--netflix-red);
+            color: white;
+            border-color: var(--netflix-red);
+        }
+        .quiz-option label {
+            cursor: pointer;
+            padding: 12px;
+            border: 1px solid #444;
+            border-radius: 0.5rem;
+            transition: all 0.2s;
+            width: 100%;
+            display: block;
+            text-align: center;
+        }
+        .quiz-option input[type="radio"] {
+            display: none;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+
+    <!-- Header Navigation -->
+    <header class="header-nav fixed top-0 left-0 right-0 z-50 p-4 shadow-xl">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold text-red-600 font-poppins"></h1>
+            <nav class="hidden sm:block">
+                <a href="#series-1" class="text-sm font-medium hover:text-red-500 mx-3 transition-colors">Projetos</a>
+                <a href="#series-2" class="text-sm font-medium hover:text-red-500 mx-3 transition-colors">Reuniões</a>
+                <a href="#series-3" class="text-sm font-medium hover:text-red-500 mx-3 transition-colors">Diário</a>
+                <a href="#series-4" class="text-sm font-medium hover:text-red-500 mx-3 transition-colors">Comunicação</a>
+                <a href="#series-5" class="text-sm font-medium hover:text-red-500 mx-3 transition-colors">Formal</a>
+                <a href="#practice-zone" class="text-sm font-medium hover:text-red-500 mx-3 transition-colors">Prática</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="pt-20 pb-10">
+        <!-- HERO Section - Main Feature: WRAP UP -->
+        <section class="max-w-7xl mx-auto px-4 mb-12">
+            <div class="relative rounded-xl overflow-hidden shadow-2xl">
+                <div class="h-96 w-full bg-cover bg-center" style="background: linear-gradient(to bottom, rgba(20, 20, 20, 0.1) 0%, var(--dark-bg) 100%), url('https://placehold.co/1280x500/1F1F1F/FFFFFF?text=The+Finale');">
+                    <div class="absolute inset-0 p-8 flex flex-col justify-end">
+                        <p class="text-xl font-medium text-gray-300 mb-2">Série de Carreira | Temporada 1, Episódio 1</p>
+                        <h2 class="hero-title text-5xl md:text-7xl font-extrabold text-white mb-4 leading-tight">
+                            A Lição Mais Importante: <span class="highlight-red">WRAP UP</span>
+                        </h2>
+                        <p class="max-w-2xl text-lg text-gray-200">
+                            Em inglês, **"encerrar"** ou **"terminar"** ou **"concluir"** não são sinônimos. Aprenda a diferença crucial entre **WRAP UP** (fechamento ativo/resumo) e **FINISH/END** (ponto final) para soar natural e profissional no trabalho.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Core Lesson Explanation -->
+        <section id="the-lesson" class="max-w-7xl mx-auto px-4 my-16">
+            <h3 class="text-4xl font-bold mb-6 text-center border-b-2 border-red-600 pb-2">
+                The Closure Spectrum | O Espectro do Encerramento
+            </h3>
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-4 md:gap-8 text-center">
+                
+                <div class="lesson-card p-4 rounded-lg">
+                    <p class="text-4xl mb-2 text-red-500">🛑</p>
+                    <h4 class="text-lg font-bold text-white">END</h4>
+                    <p class="text-gray-400 italic text-xs">Ponto Final no Tempo/Período</p>
+                </div>
+                
+                <div class="lesson-card p-4 rounded-lg">
+                    <p class="text-4xl mb-2 text-yellow-500">✅</p>
+                    <h4 class="text-lg font-bold text-white">FINISH</h4>
+                    <p class="text-gray-400 italic text-xs">Ação Terminada/Completa</p>
+                </div>
+
+                <div class="lesson-card p-4 rounded-lg wrap-up-core col-span-1 md:col-span-1">
+                    <p class="text-4xl mb-2 text-yellow-400">🎁</p>
+                    <h4 class="text-xl font-extrabold text-red-600">WRAP UP</h4>
+                    <p class="text-gray-200 italic text-xs">Ato de Fechar e Resumir</p>
+                </div>
+
+                <div class="lesson-card p-4 rounded-lg">
+                    <p class="text-4xl mb-2 text-blue-400">🏃</p>
+                    <h4 class="text-lg font-bold text-white">I'M DONE</h4>
+                    <p class="text-gray-400 italic text-xs">Status Pessoal/Informal</p>
+                </div>
+
+                <div class="lesson-card p-4 rounded-lg formal-card">
+                    <p class="text-4xl mb-2 text-formal-blue">📜</p>
+                    <h4 class="text-lg font-bold text-white">COMPLETE / CONCLUDE</h4>
+                    <p class="text-gray-400 italic text-xs">Formal / Acadêmico (Concluir)</p>
+                </div>
+
+            </div>
+        </section>
+        
+        <!-- Other sections (Series 1, 5, 2, 4, 3) remain here, unchanged for brevity, as the focus is the Quiz section -->
+        
+        <!-- Series 1: Projects & Reports -->
+        <section id="series-1" class="py-10">
+            <h3 class="text-2xl font-bold highlight-red ml-4 mb-4 md:text-3xl max-w-7xl mx-auto px-4 border-l-4 border-red-600 pl-4">
+                Série 1: Grandes Entregas (Projects & Reports)
+            </h3>
+            <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-8">
+                <!-- Scenario 1 -->
+                <div class="lesson-card p-6 rounded-xl">
+                    <h4 class="text-xl font-bold mb-3 text-yellow-400 font-poppins">Cenário A: Concluindo um Projeto Importante</h4>
+                    <p class="text-gray-300 italic mb-4"><span class="highlight-text">Contexto PT:</span> Eu concluí um projeto importante. / Foi concluída as entregas das pendências.</p>
+                    <div class="mb-4">
+                        <p class="text-sm font-semibold text-white">Opção Formal (The Official End):</p>
+                        <p class="text-lg">"The team and I **finished** the acquisition project."</p>
+                        <div class="portuguese-box"><p class="text-xs font-semibold">Português:</p><p class="text-sm">O trabalho principal do projeto **terminou**. O foco é na conclusão da tarefa em si. Use **FINISH**.</p></div>
+                    </div>
+                    <div class="mb-4">
+                        <p class="text-sm font-semibold text-white">Opção Ativa (The Closing Process):</p>
+                        <p class="text-lg">"We just need to **wrap up** the final paperwork on that project."</p>
+                        <div class="portuguese-box"><p class="text-xs font-semibold">Português:</p><p class="text-sm">Estamos na fase de **fechamento/arremate/burocracia final**. É a ação de finalizar os *detalhes* e *comunicar* o encerramento. Use **WRAP UP**.</p></div>
+                    </div>
+                    <div class="teacher-tip">
+                        <p class="font-bold text-red-300">Dica do Professor: Foco na Circunstância</p>
+                        <p class="text-sm text-gray-200">**FINISH** significa que a **tarefa principal está 100% pronta**. **WRAP UP** significa que você está **executando as atividades de fechamento** (enviar e-mails, arquivar documentos, fazer o *summary*).<span class="block mt-1 italic text-yellow-400">Pense: Quando você usa **"dar o arremate final"** ou **"fazer o resumo"** em Português? Use **WRAP UP** em Inglês.</span></p>
+                    </div>
+                </div>
+                <!-- Scenario 2 -->
+                <div class="lesson-card p-6 rounded-xl">
+                    <h4 class="text-xl font-bold mb-3 text-yellow-400 font-poppins">Cenário B: Entregando um Relatório</h4>
+                    <p class="text-gray-300 italic mb-4"><span class="highlight-text">Contexto PT:</span> Eu terminei o relatório para a reunião.</p>
+                    <div class="mb-4">
+                        <p class="text-sm font-semibold text-white">Opção Direta (Task Complete):</p>
+                        <p class="text-lg">"I **finished** the report for the meeting."</p>
+                        <div class="portuguese-box"><p class="text-xs font-semibold">Português:</p><p class="text-sm">Você completou a tarefa. É o "terminar" de **completar a escrita**. Use **FINISH**.</p></div>
+                    </div>
+                    <div class="mb-4">
+                        <p class="text-sm font-semibold text-white">Opção Status Pessoal (Informal):</p>
+                        <p class="text-lg">"I'm **done** with the report, it's on your desk."</p>
+                        <div class="portuguese-box"><p class="text-xs font-semibold">Português:</p><p class="text-sm">O uso de **I'm done** é totalmente aceitável, mas é mais informal e foca no seu *status* ("Eu acabei minha parte/Estou livre").</p></div>
+                    </div>
+                    <div class="teacher-tip">
+                        <p class="font-bold text-red-300">Dica do Professor: Foco na Circunstância</p>
+                        <p class="text-sm text-gray-200">Para **tarefas simples e concluídas**, **FINISH** é a melhor escolha. Dizer "I wrapped up the report" só é natural se você se concentrou nos *ajustes finais e na formatação da conclusão* antes de enviá-lo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Series 5: Formalidade & Encerramento Acadêmico (Complete & Conclude) -->
+        <section id="series-5" class="py-10">
+            <h3 class="text-2xl font-bold text-formal-blue ml-4 mb-4 md:text-3xl max-w-7xl mx-auto px-4 border-l-4 border-formal-blue pl-4">
+                Série 5: Formalidade & Encerramento Acadêmico (Complete & Conclude)
+            </h3>
+            <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-8">
+                <!-- Scenario I -->
+                <div class="lesson-card p-6 rounded-xl formal-card">
+                    <h4 class="text-xl font-bold mb-3 text-formal-blue font-poppins">Cenário I: Concluindo uma Tese ou Discurso (Formal/Acadêmico)</h4>
+                    <p class="text-gray-300 italic mb-4"><span class="highlight-text">Contexto PT:</span> O professor irá concluir a palestra agora. / O documento concluiu que...</p>
+                    <div class="mb-4">
+                        <p class="text-sm font-semibold text-white">Opção Formal (The Final Statement):</p>
+                        <p class="text-lg">"The speaker will now **conclude** the address."</p>
+                        <div class="portuguese-box"><p class="text-xs font-semibold">Português:</p><p class="text-sm">**CONCLUDE** é o **concluir** de *chegar a uma conclusão* ou *encerrar um argumento*. Ideal para discursos e o capítulo final de um relatório.</p></div>
+                    </div>
+                    <div class="mb-4">
+                        <p class="text-sm font-semibold text-white">Opção Alternativa (Simplesmente Terminar):</p>
+                        <p class="text-lg">"The debate is **over**. It **ended** badly."</p>
+                        <div class="portuguese-box"><p class="text-xs font-semibold">Português:</p><p class="text-sm">Use **END** se for apenas para parar no tempo (como o *fim* de um período ou evento) sem a nuance de resumo ou argumento.</p></div>
+                    </div>
+                    <div class="teacher-tip">
+                        <p class="font-bold text-red-300">Dica do Professor: Foco na Circunstância</p>
+                        <p class="text-sm text-gray-200">Use **CONCLUDE** quando o ato de fechar envolver **argumentação, raciocínio ou uma declaração formal**. Você **CONCLUDE** um debate. Você **FINISH** a tarefa de fazer a ata desse debate.</p>
+                    </div>
+                </div>
+                <!-- Scenario J -->
+                <div class="lesson-card p-6 rounded-xl formal-card">
+                    <h4 class="text-xl font-bold mb-3 text-formal-blue font-poppins">Cenário J: Concluindo um Formulário ou Requisito (Oficial/Compliance)</h4>
+                    <p class="text-gray-300 italic mb-4"><span class="highlight-text">Contexto PT:</span> Você concluiu todos os requisitos do curso?</p>
+                    <div class="mb-4">
+                        <p class="text-sm font-semibold text-white">Opção Formal (The Official Checklist):</p>
+                        <p class="text-lg">"Have you **completed** all the course requirements?"</p>
+                        <div class="portuguese-box"><p class="text-xs font-semibold">Português:</p><p class="text-sm">**COMPLETE** é o **concluir** de **Integridade**. É usado para formulários, treinamentos e listas onde a conclusão deve ser de 100%. É o *check* oficial.</p></div>
+                    </div>
+                    <div class="mb-4">
+                        <p class="text-sm font-semibold text-white">Opção Profissional (The Action):</p>
+                        <p class="text-lg">"I **finished** setting up the software."</p>
+                        <div class="portuguese-box"><p class="text-xs font-semibold">Português:</p><p class="text-sm">Para tarefas diárias que você *fez*, **FINISH** é mais comum. "I **completed** the setup" soa mais formal, como se você estivesse documentando o feito.</p></div>
+                    </div>
+                    <div class="teacher-tip">
+                        <p class="font-bold text-red-300">Dica do Professor: Foco na Circunstância</p>
+                        <p class="text-sm text-gray-200">**COMPLETE** é sempre sobre a **totalidade** de algo: preencher completamente um formulário, concluir 100% do treinamento. Use-o sempre que o foco for em *completar o todo*, e não apenas em *chegar ao fim*.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Series 2: Meetings & Shifts (Existing) -->
+        <section id="series-2" class="py-10">
+            <h3 class="text-2xl font-bold highlight-red ml-4 mb-4 md:text-3xl max-w-7xl mx-auto px-4 border-l-4 border-red-600 pl-4">
+                Série 2: Fechando o Dia (Meetings & Shifts)
+            </h3>
+            <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-8">
+                <!-- Scenario C -->
+                <div class="lesson-card p-6 rounded-xl">
+                    <h4 class="text-xl font-bold mb-3 text-yellow-400 font-poppins">Cenário C: Fechando uma Reunião</h4>
+                    <p class="text-gray-300 italic mb-4"><span class="highlight-text">Contexto PT:</span> Vamos encerrar esta reunião agora.</p>
+                    <div class="mb-4">
+                        <p class="text-sm font-semibold text-white">Opção Padrão (The Summary):</p>
+                        <p class="text-lg">"Let's **wrap up** the meeting with a summary of the next steps."</p>
+                        <div class="portuguese-box"><p class="text-xs font-semibold">Português:</p><p class="text-sm">O ato de **guiar a reunião para um encerramento produtivo**, com resumo e próximos passos. Use **WRAP UP**.</p></div>
+                    </div>
+                    <div class="mb-4">
+                        <p class="text-sm font-semibold text-white">Opção Direta/Urgente (The Imperative):</p>
+                        <p class="text-lg">"Okay, everyone, **wrap it up**! We're over time."</p>
+                        <div class="portuguese-box"><p class="text-xs font-semibold">Português:</p><p class="text-sm">"**Chega! Vamos fechar o assunto!**" É mais direto e pode soar um pouco abrupto, use-o quando o tempo esgotou ou para pedir que a pessoa **cale a boca** de forma mais polida.</p></div>
+                    </div>
+                    <div class="teacher-tip">
+                        <p class="font-bold text-red-300">Dica do Professor: Foco na Circunstância</p>
+                        <p class="text-sm text-gray-200">Em reuniões, **WRAP UP** é o verbo de escolha, pois indica **ação**. Evite dizer "The meeting **finished**", pois o verbo *finish* é geralmente usado para tarefas. O evento **ends** (acaba), mas você **wraps up** (encerra ativamente) a reunião.</p></div>
+                </div>
+                <!-- Scenario D -->
+                <div class="lesson-card p-6 rounded-xl">
+                    <h4 class="text-xl font-bold mb-3 text-yellow-400 font-poppins">Cenário D: Encerrando o Expediente Hoje</h4>
+                    <p class="text-gray-300 italic mb-4"><span class="highlight-text">Contexto PT:</span> Eu encerrei meu expediente hoje.</p>
+                    <div class="mb-4">
+                        <p class="text-sm font-semibold text-white">Opção Profissional (Active Closure):</p>
+                        <p class="text-lg">"I'm going to **wrap up** for the day now. See you tomorrow!"</p>
+                        <div class="portuguese-box"><p class="text-xs font-semibold">Português:</p><p class="text-sm">Essa é a frase padrão. Você está **finalizando ativamente as suas tarefas e fechando seu dia**. Use **WRAP UP**.</p></div>
+                    </div>
+                    <div class="mb-4">
+                        <p class="text-sm font-semibold text-white">Opção Formal (Scheduled End):</p>
+                        <p class="text-lg">"My shift **ends** at 6:00 PM."</p>
+                        <div class="portuguese-box"><p class="text-xs font-semibold">Português:</p><p class="text-sm">Se você está falando sobre a hora oficial, o horário em si **termina/acaba**. Use **END**.</p></div>
+                    </div>
+                    <div class="teacher-tip">
+                        <p class="font-bold text-red-300">Dica do Professor: Foco na Circunstância</p>
+                        <p class="text-sm text-gray-200">A tradução direta "Eu terminei meu dia de trabalho" soa muito pouco natural. **"I'm wrapping up for the day"** é a maneira mais nativa e profissional de dizer que você está se **organizando para sair**.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Series 4: Communication (Existing) -->
+        <section id="series-4" class="py-10">
+            <h3 class="text-2xl font-bold highlight-red ml-4 mb-4 md:text-3xl max-w-7xl mx-auto px-4 border-l-4 border-red-600 pl-4">
+                Série 4: Comunicação (Calls & Emails)
+            </h3>
+            <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-8">
+                <!-- Scenario G -->
+                <div class="lesson-card p-6 rounded-xl">
+                    <h4 class="text-xl font-bold mb-3 text-yellow-400 font-poppins">Cenário G: Encerrando uma Chamada ou Ligação</h4>
+                    <p class="text-gray-300 italic mb-4"><span class="highlight-text">Contexto PT:</span> Preciso terminar esta ligação agora.</p>
+                    <div class="mb-4">
+                        <p class="text-sm font-semibold text-white">Opção Educada (Active Closure):</p>
+                        <p class="text-lg">"I need to **wrap up** this call. Can we summarize our actions?"</p>
+                        <div class="portuguese-box"><p class="text-xs font-semibold">Português:</p><p class="text-sm">O uso mais comum e educado para **guiar a conversa para um fechamento**. Use **WRAP UP**.</p></div>
+                    </div>
+                    <div class="mb-4">
+                        <p class="text-sm font-semibold text-white">Opção Informal (Quick Exit):</p>
+                        <p class="text-lg">"I've got to go. I'm **done** here."</p>
+                        <div class="portuguese-box"><p class="text-xs font-semibold">Português:</p><p class="text-sm">Informal. Foca no seu *status pessoal* de estar livre da conversa. Use **I'M DONE**.</p></div>
+                    </div>
+                    <div class="teacher-tip">
+                        <p class="font-bold text-red-300">Dica do Professor: Foco na Circunstância</p>
+                        <p class="text-sm text-gray-200">Use **WRAP UP** para **conversas, reuniões e dias de trabalho**. Use **END** para **eventos no tempo** (a chamada *ended*). Nunca diga "I will *finish* the call."</p>
+                    </div>
+                </div>
+                <!-- Scenario H -->
+                <div class="lesson-card p-6 rounded-xl">
+                    <h4 class="text-xl font-bold mb-3 text-yellow-400 font-poppins">Cenário H: Fechando um Tópico de Discussão</h4>
+                    <p class="text-gray-300 italic mb-4"><span class="highlight-text">Contexto PT:</span> Vamos encerrar a discussão sobre este ponto.</p>
+                    <div class="mb-4">
+                        <p class="text-sm font-semibold text-white">Opção Colaborativa (Discussion Closure):</p>
+                        <p class="text-lg">"Let's **wrap up** this discussion and move on to the next item."</p>
+                        <div class="portuguese-box"><p class="text-xs font-semibold">Português:</p><p class="text-sm">Ideal para discussões em equipe, threads de e-mail longos ou pontos de pauta. Use **WRAP UP**.</p></div>
+                    </div>
+                    <div class="mb-4">
+                        <p class="text-sm font-semibold text-white">Opção Definitiva (Hard Stop):</p>
+                        <p class="text-lg">"We must **end** the debate now."</p>
+                        <div class="portuguese-box"><p class="text-xs font-semibold">Português:</p><p class="text-sm">Mais forte e autoritário. Foca no **fim abrupto** ou no **ponto final** de um evento. Use **END**.</p></div>
+                    </div>
+                    <div class="teacher-tip">
+                        <p class="font-bold text-red-300">Dica do Professor: Foco na Circunstância</p>
+                        <p class="text-sm text-gray-200">**WRAP UP** é o verbo de **fechamento colaborativo**. Se o tópico está encerrado porque a tarefa foi feita, use **FINISH**: "We've **finished** talking about that point."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Series 3: Personal Status & Speed (Existing) -->
+        <section id="series-3" class="py-10">
+            <h3 class="text-2xl font-bold highlight-red ml-4 mb-4 md:text-3xl max-w-7xl mx-auto px-4 border-l-4 border-red-600 pl-4">
+                Série 3: Status Pessoal (I'm Done)
+            </h3>
+            <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-8">
+                <!-- Scenario E -->
+                <div class="lesson-card p-6 rounded-xl">
+                    <h4 class="text-xl font-bold mb-3 text-yellow-400 font-poppins">Cenário E: Terminando Algo Rápido</h4>
+                    <p class="text-gray-300 italic mb-4"><span class="highlight-text">Contexto PT:</span> Eu terminei meu trabalho muito rápido.</p>
+                    <div class="mb-4">
+                        <p class="text-sm font-semibold text-white">Opção Informal (The Status):</p>
+                        <p class="text-lg">"I **finished** my job very fast. I'm **done**."</p>
+                        <div class="portuguese-box"><p class="text-xs font-semibold">Português:</p><p class="text-sm">Use **I'm done** para sinalizar que você está **disponível, livre, ou satisfeito**. É um status sobre *você* ("Eu acabei e estou livre").</p></div>
+                    </div>
+                    <div class="mb-4">
+                        <p class="text-sm font-semibold text-white">Opção Neutra (The Action):</p>
+                        <p class="text-lg">"I **completed** the task quickly."</p>
+                        <div class="portuguese-box"><p class="text-xs font-semibold">Português:</p><p class="text-sm">**COMPLETED** é sempre a opção mais neutra e polida para dizer que algo foi feito (formalmente ou em registro de atividades).</p></div>
+                    </div>
+                    <div class="teacher-tip">
+                        <p class="font-bold text-red-300">Dica do Professor: Foco na Circunstância</p>
+                        <p class="text-sm text-gray-200">**I'm done** é um status, sinônimo de "I'm finished." O erro comum é usá-lo com coisas que se **acabam no tempo** (reuniões, filmes). Use-o para coisas que você **completa ativamente** (tarefas, lição de casa, refeições).</p>
+                    </div>
+                </div>
+                <!-- Scenario F -->
+                <div class="lesson-card p-6 rounded-xl">
+                    <h4 class="text-xl font-bold mb-3 text-yellow-400 font-poppins">Cenário F: Fechando um Filme ou Livro</h4>
+                    <p class="text-gray-300 italic mb-4"><span class="highlight-text">Contexto PT:</span> Eu terminei de assistir o filme.</p>
+                    <div class="mb-4">
+                        <p class="text-sm font-semibold text-white">Opção Correta (The Action):</p>
+                        <p class="text-lg">"I **finished** watching the movie."</p>
+                        <div class="portuguese-box"><p class="text-xs font-semibold">Português:</p><p class="text-sm">Para atividades de consumo (**comer**, **assistir**, **ler**), **FINISH** é o verbo correto. *End* é usado para o filme ou livro em si.</p></div>
+                    </div>
+                    <div class="mb-4">
+                        <p class="text-sm font-semibold text-white">Opção Cultural (The Closure):</p>
+                        <p class="text-lg">"The movie had a great **wrap-up**."</p>
+                        <div class="portuguese-box"><p class="text-xs font-semibold">Português:</p><p class="text-sm">Neste caso, **wrap-up** (substantivo) significa o "fechamento" ou "**desfecho**" da história. Não é o ato de assistir, mas a conclusão do roteiro.</p></div>
+                    </div>
+                    <div class="teacher-tip">
+                        <p class="font-bold text-red-300">A Regra Fundamental para o Brasileiro:</p>
+                        <p class="text-sm text-gray-200">Onde você usaria **"arrematar"**, **"fazer o resumo"** ou **"finalizar os últimos detalhes"** (ação ativa de fechar), use **WRAP UP**. Onde você usaria **"terminar"** ou **"completar a tarefa"** (ponto final), use **FINISH**, **COMPLETE** ou **I'M DONE**.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Practice Zone CTA and Quiz Container -->
+        <section id="practice-zone" class="max-w-xl mx-auto px-4 my-16 text-center">
+            <div id="quiz-intro" class="p-8 rounded-xl bg-red-700 bg-opacity-20 border-2 border-red-600 shadow-lg">
+                <h3 class="text-3xl font-bold text-yellow-400 mb-4 font-poppins">
+                    Pronto para o Teste? | Ready for Practice?
+                </h3>
+                <p class="text-lg text-gray-200 max-w-3xl mx-auto mb-6">
+                    A prática leva à perfeição. Teste seu conhecimento sobre os diferentes tipos de encerramento em cenários reais de trabalho.
+                </p>
+                <button id="start-quiz-btn" class="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-full text-lg shadow-xl transition-all duration-300 transform hover:scale-105">
+                    Começar o Quiz de Wrap Up!
+                </button>
+            </div>
+
+            <div id="quiz-container" class="hidden p-8 rounded-xl bg-mid-bg border-2 border-gray-600 shadow-lg text-left">
+                <h3 class="text-2xl font-bold text-red-500 mb-4">Quiz: Diferença de Encerramento</h3>
+                <div id="question-area">
+                    <!-- Dynamic Question Content Here -->
+                </div>
+                <div class="mt-6 flex justify-between items-center">
+                    <p class="text-sm text-gray-400" id="progress-text"></p>
+                    <button id="submit-answer-btn" class="bg-yellow-500 text-gray-900 font-bold py-2 px-6 rounded-full hover:bg-yellow-400 transition-colors" disabled>
+                        Confirmar Resposta
+                    </button>
+                </div>
+            </div>
+            
+            <div id="result-container" class="hidden p-8 rounded-xl mt-6">
+                <!-- Dynamic Results Content Here -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center py-6 text-gray-500 text-sm border-t border-gray-800 mt-10">
+        @ Daby
+    </footer>
+
+    <script type="module">
+        // MARK: FIREBASE SETUP (Mandatory for all Immersives)
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+        import { getAuth, signInAnonymously, signInWithCustomToken } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+        import { getFirestore } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
+        
+        const initializeFirebase = async () => {
+            try {
+                const appId = typeof __app_id !== 'undefined' ? __app_id : 'default-app-id';
+                const firebaseConfig = typeof __firebase_config !== 'undefined' ? JSON.parse(__firebase_config) : null;
+                const initialAuthToken = typeof __initial_auth_token !== 'undefined' ? __initial_auth_token : null;
+
+                if (firebaseConfig) {
+                    const app = initializeApp(firebaseConfig);
+                    const db = getFirestore(app);
+                    const auth = getAuth(app);
+
+                    if (initialAuthToken) {
+                        await signInWithCustomToken(auth, initialAuthToken);
+                    } else {
+                        await signInAnonymously(auth);
+                    }
+                    console.log("Firebase initialized and authenticated.");
+                } else {
+                    console.warn("Firebase config not available. Proceeding without Firebase.");
+                }
+            } catch (error) {
+                console.error("Error initializing Firebase:", error);
+            }
+        };
+        
+        // MARK: QUIZ DATA AND LOGIC
+        
+        const quizQuestions = [
+            {
+                scenario: "Contexto: Estamos quase lá. Só preciso 'finalizar os últimos detalhes' e fazer o resumo antes de enviar o projeto ao cliente.",
+                question: "Qual verbo melhor descreve a ação de 'arremate e comunicação' de um projeto?",
+                options: ["finish", "end", "wrap up", "conclude"],
+                answer: "wrap up",
+                explanation: "WRAP UP é usado para o ato ativo de fechar, resumir e finalizar a burocracia (os últimos detalhes) de um processo."
+            },
+            {
+                scenario: "Contexto: Após a refeição no restaurante, você diz ao garçom: 'Eu 'terminei' de comer, pode retirar meu prato.'",
+                question: "Qual frase é mais natural para indicar o seu 'status' pessoal de ter finalizado a tarefa?",
+                options: ["I wrapped up my meal.", "I ended my meal.", "I'm done with my meal.", "I finished the meal."],
+                answer: "I'm done with my meal.",
+                explanation: "I'M DONE é a forma mais informal e comum de expressar o status de ter completado uma tarefa pessoal, como comer."
+            },
+            {
+                scenario: "Contexto: A reunião se arrastou. O gerente precisa 'encerrar' a discussão sobre um ponto para cumprir o cronograma.",
+                question: "Qual é a expressão mais profissional para 'guiar ativamente' a reunião para um fechamento?",
+                options: ["Let's end the meeting now.", "Let's finish the meeting now.", "Let's wrap up the meeting now.", "The meeting is completed."],
+                answer: "Let's wrap up the meeting now.",
+                explanation: "WRAP UP é a escolha padrão para encerrar reuniões, pois implica resumir e definir próximos passos, não apenas parar no tempo."
+            },
+            {
+                scenario: "Contexto: Você está na fila do banco e, finalmente, 'preencheu' todos os 100% dos campos do seu formulário de empréstimo.",
+                question: "Qual verbo formal indica que você 'preencheu 100%' de um documento ou requisito?",
+                options: ["finished", "ended", "wrapped up", "completed"],
+                answer: "completed",
+                explanation: "COMPLETE é usado para a ideia de 'totalidade' ou 'integridade' (100% dos itens, campos, requisitos)."
+            },
+            {
+                scenario: "Contexto: O jogo de futebol 'acabou' aos 45 minutos do segundo tempo. O tempo se esgotou.",
+                question: "Qual verbo descreve o 'fim' de um evento ou período no tempo?",
+                options: ["finished", "ended", "wrapped up", "concluded"],
+                answer: "ended",
+                explanation: "END é geralmente usado para eventos ou períodos no tempo (o filme end, o dia end, a partida end)."
+            }
+        ];
+
+        let currentQuestionIndex = 0;
+        let score = 0;
+        let selectedAnswer = null;
+
+        const quizIntro = document.getElementById('quiz-intro');
+        const quizContainer = document.getElementById('quiz-container');
+        const questionArea = document.getElementById('question-area');
+        const submitBtn = document.getElementById('submit-answer-btn');
+        const startBtn = document.getElementById('start-quiz-btn');
+        const progressText = document.getElementById('progress-text');
+        const resultContainer = document.getElementById('result-container');
+
+        const displayQuestion = () => {
+            selectedAnswer = null;
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Confirmar Resposta';
+            submitBtn.classList.remove('bg-red-600', 'hover:bg-red-700');
+            submitBtn.classList.add('bg-yellow-500', 'hover:bg-yellow-400');
+            resultContainer.innerHTML = '';
+            
+            if (currentQuestionIndex < quizQuestions.length) {
+                const q = quizQuestions[currentQuestionIndex];
+                progressText.textContent = `Questão ${currentQuestionIndex + 1} de ${quizQuestions.length}`;
+                
+                let optionsHtml = `<p class="text-lg font-medium text-gray-300 mb-4">${q.scenario}</p>`;
+                optionsHtml += `<h4 class="text-xl font-bold text-white mb-6">${q.question}</h4>`;
+                optionsHtml += `<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">`;
+                
+                // Shuffle options to prevent rote memorization
+                const shuffledOptions = q.options.sort(() => Math.random() - 0.5);
+
+                shuffledOptions.forEach((option, index) => {
+                    optionsHtml += `
+                        <div class="quiz-option">
+                            <input type="radio" id="option-${index}" name="answer" value="${option}" />
+                            <label for="option-${index}" class="text-white">${option}</label>
+                        </div>
+                    `;
+                });
+                
+                optionsHtml += `</div>`;
+                questionArea.innerHTML = optionsHtml;
+
+                // Add event listeners to radio buttons
+                document.querySelectorAll('input[name="answer"]').forEach(radio => {
+                    radio.addEventListener('change', (e) => {
+                        selectedAnswer = e.target.value;
+                        submitBtn.disabled = false;
+                    });
+                });
+                
+            } else {
+                showResults();
+            }
+        };
+
+        const checkAnswer = () => {
+            const q = quizQuestions[currentQuestionIndex];
+            const isCorrect = selectedAnswer === q.answer;
+
+            // Disable all options after submission
+            document.querySelectorAll('input[name="answer"]').forEach(radio => radio.disabled = true);
+            
+            // Highlight options
+            document.querySelectorAll('.quiz-option').forEach(div => {
+                const radio = div.querySelector('input[name="answer"]');
+                const label = div.querySelector('label');
+
+                if (radio.value === q.answer) {
+                    label.style.backgroundColor = 'rgb(34, 197, 94)'; // Green for correct
+                    label.style.borderColor = 'rgb(34, 197, 94)';
+                } else if (radio.checked && !isCorrect) {
+                    label.style.backgroundColor = 'rgb(239, 68, 68)'; // Red for wrong selected
+                    label.style.borderColor = 'rgb(239, 68, 68)';
+                } else {
+                    label.style.backgroundColor = '#1F1F1F'; // Default background for unselected
+                    label.style.borderColor = '#444';
+                }
+            });
+
+            if (isCorrect) {
+                score++;
+                resultContainer.innerHTML = `
+                    <p class="text-green-500 font-bold text-xl mb-2">✅ Resposta Correta!</p>
+                    <p class="text-gray-300 text-sm">Próxima questão em instantes.</p>
+                `;
+            } else {
+                resultContainer.innerHTML = `
+                    <p class="text-red-500 font-bold text-xl mb-2">❌ Resposta Incorreta.</p>
+                    <p class="text-gray-300 text-sm mb-2">A resposta correta era: <span class="text-yellow-400 font-bold">${q.answer}</span>.</p>
+                    <p class="text-gray-400 text-sm">Explicação: ${q.explanation}</p>
+                `;
+            }
+            
+            submitBtn.textContent = 'Próxima Questão';
+            submitBtn.disabled = false;
+            submitBtn.classList.remove('bg-yellow-500', 'hover:bg-yellow-400');
+            submitBtn.classList.add('bg-red-600', 'hover:bg-red-700');
+            submitBtn.removeEventListener('click', checkAnswer);
+            submitBtn.addEventListener('click', nextQuestion);
+        };
+
+        const nextQuestion = () => {
+            currentQuestionIndex++;
+            if (currentQuestionIndex < quizQuestions.length) {
+                displayQuestion();
+                submitBtn.removeEventListener('click', nextQuestion);
+                submitBtn.addEventListener('click', checkAnswer);
+            } else {
+                showResults();
+            }
+        };
+
+        const showResults = () => {
+            quizContainer.classList.add('hidden');
+            resultContainer.classList.remove('hidden');
+            
+            const percentage = (score / quizQuestions.length) * 100;
+            const message = percentage >= 80 ? 
+                "Excelente! Você domina o espectro de encerramento em inglês. Continue assim!" : 
+                (percentage >= 50 ? 
+                    "Bom trabalho! Você pegou a essência. Revise os cenários com 'END' e 'COMPLETE'." :
+                    "Você está no caminho certo! Revise a lição, especialmente a diferença entre WRAP UP e FINISH.");
+
+            resultContainer.innerHTML = `
+                <div class="bg-mid-bg p-8 rounded-xl formal-card">
+                    <h3 class="text-3xl font-bold text-yellow-400 mb-4 font-poppins">Resultados do Quiz</h3>
+                    <p class="text-xl text-white mb-2">Você acertou <span class="text-red-500 font-extrabold">${score}</span> de ${quizQuestions.length} questões.</p>
+                    <p class="text-4xl font-extrabold text-red-600">${percentage.toFixed(0)}% de Acerto</p>
+                    <p class="text-lg text-gray-300 mt-4">${message}</p>
+                    <button onclick="window.location.reload();" class="mt-6 bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-6 rounded-full transition-all">
+                        Tentar Novamente
+                    </button>
+                </div>
+            `;
+        };
+        
+        const startQuiz = () => {
+            quizIntro.classList.add('hidden');
+            quizContainer.classList.remove('hidden');
+            currentQuestionIndex = 0;
+            score = 0;
+            displayQuestion();
+            submitBtn.addEventListener('click', checkAnswer);
+        };
+
+        // Initialize Firebase and set up event listeners when the window loads
+        window.onload = () => {
+            initializeFirebase();
+            startBtn.addEventListener('click', startQuiz);
+        };
+    </script>
+</body>
+</html>
